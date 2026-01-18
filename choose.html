@@ -1,0 +1,37 @@
+<!-- A Treasure Game - A map will be shown to you with buried treasure 
+	 you have to find the treasure with clicking on it.
+	 on every unsuccessful click - a message will be shown to you with how much closer you are.
+	 on successful click - Game will be finished.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Find the buried treasure</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="music/piratemusic.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <center>
+      <div class="header">
+        <h1>Find the buried treasure!</h1>
+      </div>
+    </center>
+    <center>
+      <div class="text">
+        <h1><a href="hard.html" class="btn">Hard</a></h1>
+        <h1><a href="easy.html" class="btn">Easy</a></h1>
+        <br />
+      </div>
+    </center>
+    <script>
+      var x = document.getElementById("myAudio");
+      x.loop = true;
+      x.play();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

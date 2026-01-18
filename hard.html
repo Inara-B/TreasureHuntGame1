@@ -1,0 +1,49 @@
+<!-- A Treasure Game - A map will be shown to you with buried treasure 
+	 you have to find the treasure with clicking on it.
+	 on every unsuccessful click - a message will be shown to you with how much closer you are.
+	 on successful click - Game will be finished.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Find the buried treasure - Easy</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="music/piratemusic.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="parrot-container">
+      <img id="sassyParrot" src="images/parrot.png" alt="Sassy Parrot" />
+      <div id="chatBubble" class="chat-bubble">
+        <p id="parrotSpeech"></p>
+      </div>
+    </div>
+
+    <div class="header">
+      <h1>Find the buried treasure!!</h1>
+    </div>
+
+    <div class="game-container">
+      <div class="info-panel">
+        <p><strong>Mode:</strong> <span id="mode">Hard</span></p>
+        <p><strong>Clicks:</strong> <span id="clicks">0</span></p>
+        <p><strong>Time:</strong> <span id="time">0</span> seconds</p>
+        <p><strong>Close:</strong> <span id="hint">Start clicking!</span></p>
+      </div>
+      <div class="map-panel">
+        <img id="map" width="600" height="600" src="images/hardmap.jpeg" />
+      </div>
+    </div>
+
+    <h1><a href="index.html" class="btn">Back to Home</a></h1>
+
+    <script>
+      var x = document.getElementById("myAudio");
+      x.loop = true;
+      x.play();
+    </script>
+    <script src="hardgame.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Find the buried treasure</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="music/piratemusic.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <center>
+      <div class="header">
+        <h1>Find the buried treasure!</h1>
+      </div>
+
+      <a href="choose.html" class="blnkbtn" class="header">
+        <h1 style="font-size: 100px" id="blnk">=>Start Game<=</h1>
+      </a>
+    </center>
+    <script src="blink.js"></script>
+    <script>
+      blink();
+      var x = document.getElementById("myAudio");
+      x.loop = true;
+      x.play();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
